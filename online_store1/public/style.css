@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url("https://cdn.apartmenttherapy.info/image/upload/v1558619529/at/archive/5d31f9559f035e285e9fcc3c2324221e1f6ae838.jpg"), #000;
+  background-position: center;
+  background-size: cover;
+  padding: 0 10px;
+  margin: 0;
+}
+
+.glassmorphism-container {
+  width: 400px;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+}
+
+.glassmorphism-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-field {
+  position: relative;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #000000;
+  font-size: 16px;
+  border-bottom: 2px solid #000000;
+  transition: border-color 0.3s ease; /* Add transition */
+}
+
+.input-field input:focus {
+  border-bottom: 2px solid #4800ff; /* Change focus color */
+}
+
+.input-field label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #000000;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.15s ease;
+}
+
+.input-field input:focus + label,
+.input-field input:valid + label {
+  font-size: 0.8rem;
+  top: 0px;
+  color: #4800ff; /* Change focus color */
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #000000;
+}
+
+.remember input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.forgot {
+  color: #000000;
+}
+
+.forgot a {
+  color: #4800ff;
+  text-decoration: none;
+}
+
+.forgot a:hover {
+  text-decoration: underline;
+}
+
+.button {
+  background: #fff;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  margin-top: 30px;
+  padding: 5px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 16px;
+  border: 2px solid transparent;
+  transition: 0.3s ease;
+}
+
+.button:hover {
+  color: #fff;
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.register {
+  text-align: center;
+  margin-top: 30px;
+  color: #000000;
+}
+
+.register a {
+  color: #4800ff;
+  text-decoration: none;
+}
+
+.register a:hover {
+  text-decoration: underline;
+}
+

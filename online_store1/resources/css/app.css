@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.product-card {
+    transition: transform 0.5s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
